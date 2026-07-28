@@ -1,0 +1,53 @@
+name: Feature request
+description: New capability or change to existing behavior
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and who has it
+      description: What's the user problem? Who reported it (customer, support, internal)?
+    validations:
+      required: true
+  - type: textarea
+    id: why-now
+    attributes:
+      label: Why now
+      description: What makes this worth doing ahead of everything else in the backlog?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: In scope / out of scope
+      description: What's included — and explicitly what is not.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Testable statements. "Done when…"
+      placeholder: |
+        - Done when …
+        - Done when …
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: How we verify after ship
+      description: What do we look at post-release to confirm it worked (metric, query, customer confirmation)?
+    validations:
+      required: true
+  - type: dropdown
+    id: north-star
+    attributes:
+      label: Expected impact on daily emails sent
+      options:
+        - High
+        - Medium
+        - Low
+        - None / indirect
+    validations:
+      required: true
