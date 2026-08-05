@@ -7,10 +7,16 @@ body:
     attributes:
       label: What's broken?
       placeholder: >-
-        What you saw vs. what you expected. Paste the exact error message if
-        there is one.
+        What did you observe? Paste the exact error message if there is one.
     validations:
       required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: What should have happened instead?
+    validations:
+      required: false
   - type: textarea
     id: evidence
     attributes:
