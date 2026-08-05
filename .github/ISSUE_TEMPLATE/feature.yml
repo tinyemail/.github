@@ -5,49 +5,22 @@ body:
   - type: textarea
     id: problem
     attributes:
-      label: Problem and who has it
-      description: What's the user problem? Who reported it (customer, support, internal)?
+      label: What problem, and who has it?
+      placeholder: >-
+        Who asked for this (customer, support, you)? What can't they do today?
     validations:
       required: true
   - type: textarea
-    id: why-now
+    id: done
     attributes:
-      label: Why now
-      description: What makes this worth doing ahead of everything else in the backlog?
+      label: What would "done" look like?
+      description: How would you tell it's working? Rough is fine — this gets refined at triage.
     validations:
-      required: true
+      required: false
   - type: textarea
-    id: scope
+    id: context
     attributes:
-      label: In scope / out of scope
-      description: What's included — and explicitly what is not.
+      label: Additional context
+      description: Links, screenshots, related conversations — anything else useful.
     validations:
-      required: true
-  - type: textarea
-    id: acceptance
-    attributes:
-      label: Acceptance criteria
-      description: Testable statements. "Done when…"
-      placeholder: |
-        - Done when …
-        - Done when …
-    validations:
-      required: true
-  - type: textarea
-    id: verification
-    attributes:
-      label: How we verify after ship
-      description: What do we look at post-release to confirm it worked (metric, query, customer confirmation)?
-    validations:
-      required: true
-  - type: dropdown
-    id: north-star
-    attributes:
-      label: Expected impact on daily emails sent
-      options:
-        - High
-        - Medium
-        - Low
-        - None / indirect
-    validations:
-      required: true
+      required: false
