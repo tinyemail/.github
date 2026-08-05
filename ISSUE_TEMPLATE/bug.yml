@@ -1,0 +1,37 @@
+name: Bug report
+description: Something is broken or behaving unexpectedly
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-broken
+    attributes:
+      label: What's broken?
+      placeholder: >-
+        What you saw vs. what you expected. Paste the exact error message if
+        there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / steps to reproduce
+      description: Logs, screenshots, campaign or send IDs — anything that helps someone who isn't you see it.
+    validations:
+      required: false
+  - type: input
+    id: account
+    attributes:
+      label: Affected account
+      placeholder: Account UUID (preferred) or customer email
+    validations:
+      required: false
+  - type: dropdown
+    id: sending-impact
+    attributes:
+      label: Is sending blocked or email being lost?
+      options:
+        - "Yes"
+        - "No"
+        - Not sure
+    validations:
+      required: false
